@@ -4,12 +4,6 @@ const amount = 200;
 
 var stars_position = new Array();
 var stars_velocity = new Array();
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-}
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-}
 function starsInit(){
     for (let i = 0; i < amount; i++){
         stars_position.push([]);
@@ -17,11 +11,12 @@ function starsInit(){
     }
     for (let i = 0; i < amount; i++){
         let r1 = rando(0.0,canvas.width);
-        let r2 = rando(0.0,canvas.width);
+        let r2 = rando(0.0,canvas.height);
         let r3 = rando(-1.0,1.0,"float");
         let r4 = rando(-1.0,1.0,"float");
         stars_position[i].push(r1,r2);
-        stars_velocity[i].push(r3,r4);
+        stars_velocity[i].push(r3,r4); // stars_position[i][0] - X, stars_position[i][1] - Y
+
     }
     drawStars();
 
@@ -43,6 +38,7 @@ async function starsUpdate(){
     starsUpdate();
 }
 function drawStars(){
+    resizeCanvas();
     ctx.fillStyle="white";
     ctx.globalAlpha=0.75;
     for (let i = 0; i < amount; i++){
@@ -52,12 +48,13 @@ function drawStars(){
 
 
 function resizeCanvas() {
-    var dimension = [document.documentElement.clientWidth, document.body.clientHeight/2];
+    var dimension = [document.documentElement.clientWidth, document.body.clientHeight];
     canvas.width = dimension[0];
+    canvas.height = dimension[1];
 }
-canvas.height = document.body.clientHeight/2;
+
 window.addEventListener("resize", resizeCanvas);
-resizeCanvas();
+
 starsInit();
 starsUpdate();
 function rando(a, b, e) {
