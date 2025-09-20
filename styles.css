@@ -1,26 +1,39 @@
 * {
-    font-family: "Chiron GoRound TC", sans-serif;
-    
+    font-family: "Chiron GoRound TC", sans-serif;   
+    color: #d2d4d2;
 }
 header {
-    background: #333;
+    background: #838181;
     color: #fff;
-    padding: 60px 20px;
+    padding: 20px 20px;
     text-align: center;
     border-radius: 10px;
     font-size: 150%;
+    margin-bottom: 20px;
 }
 section {
-    margin: 40px 0;
+    margin-bottom: 40px;
+}
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #33373a;
 }
 .textlist {
+    background-color: #24282a;
+    border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    padding: 5px;
 }
 footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    background: #eee;
-    color: #555;
+    background: #8f8f8f81;
+    color: #e9e9e9;
+}
+.fit-picture {
+    width: 24%;
+    border-radius: 10px;
 }
