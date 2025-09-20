@@ -1,6 +1,6 @@
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
-const amount = 200;
+const amount = 600;
 
 var stars_position = new Array();
 var stars_velocity = new Array();
