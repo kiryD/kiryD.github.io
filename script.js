@@ -54,7 +54,7 @@ function resizeCanvas() {
 }
 
 window.addEventListener("resize", resizeCanvas);
-
+resizeCanvas()
 starsInit();
 starsUpdate();
 function rando(a, b, e) {
