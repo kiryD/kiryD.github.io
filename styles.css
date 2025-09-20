@@ -17,11 +17,11 @@ section {
 canvas {
     position: absolute;
     display: block;
+    margin-top: -10px;
+    margin-left: -10px;
     z-index: -1;
 }
 body {
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: #33373a;
 }
 body::-webkit-scrollbar {
