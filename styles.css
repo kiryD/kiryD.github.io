@@ -14,10 +14,18 @@ header {
 section {
     margin-bottom: 40px;
 }
+canvas {
+    position: absolute;
+    display: block;
+    z-index: -1;
+}
 body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #33373a;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 .textlist {
     background-color: #24282a;
