@@ -27,8 +27,11 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .textlist {
-    background-color: #24282a;
+    background-color: #24282a75;
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
@@ -44,4 +47,57 @@ footer {
 .fit-picture {
     width: 24%;
     border-radius: 10px;
+    height:auto;
+}
+.p1 {
+    text-align: center;
+}
+.p2 {
+    text-align: center;
+}
+.p3 {
+    text-align: center;
+}  
+.p4 {
+    text-align: center;
+}
+.p5 {
+    text-align: center;
+}
+.p6 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  background-color: tomato;
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 0.2),
+    rgb(0 0 0 / 0.2) 30%,
+    transparent
+  );
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.styled:hover {
+  background-color: red;
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 0.6),
+    inset 2px 2px 3px rgb(0 0 0 / 0.6);
 }
