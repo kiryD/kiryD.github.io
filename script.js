@@ -12,8 +12,8 @@ function starsInit(){
     for (let i = 0; i < amount; i++){
         let r1 = rando(0.0,canvas.width);
         let r2 = rando(0.0,canvas.height);
-        let r3 = rando(-1.0,1.0,"float");
-        let r4 = rando(-1.0,1.0,"float");
+        let r3 = rando(-0.5,1.0,"float");
+        let r4 = rando(-0.5,1.0,"float");
         stars_position[i].push(r1,r2);
         stars_velocity[i].push(r3,r4); // stars_position[i][0] - X, stars_position[i][1] - Y
 
@@ -57,6 +57,8 @@ window.addEventListener("resize", resizeCanvas);
 resizeCanvas()
 starsInit();
 starsUpdate();
+
+
 function rando(a, b, e) {
     var g = function(f) {
         return "undefined" === typeof f
